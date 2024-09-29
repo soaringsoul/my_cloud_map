@@ -31,7 +31,7 @@
         </ul>
     </div>
 </div>
-<script type="text/javascript" src='//webapi.amap.com/maps?v=2.0&key=2a9191a0c50c967434ecdbd6ae9ddfc7'></script>
+<script type="text/javascript" src='//webapi.amap.com/maps?v=2.0&key=c20e2d5b160ac012d10af2a05fd38528'></script>
 <!-- UI组件库 1.0 -->
 <script src="//webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
 <script type="text/javascript">
@@ -514,7 +514,7 @@
         });
 
         $('<div id="loadingTip">加载数据，请稍候...</div>').appendTo(document.body);
-        $.get('http://localhost:8080/static/gd_markers/poi_data.txt',
+        $.get('http://localhost:9998/static/gd_markers/poi_data.txt',
             function(csv) {
                 $('#loadingTip').remove();
                 var lines = csv.split('\n');
